@@ -7,8 +7,10 @@ site_description: yoursite
 # 第二部分：网页的导航（所有名称均可替换）
 # 这里将决定你最终展示出的文件的结构，冒号后面对应的链接应为以docs为根目录下的相对路径
 nav:
-- main:
-  - home: index.md
+- 前言: intro.md
+- 实验导读: preparation.md
+- 常见问题及答疑: FAQ.md
+- 通知: notice.md
 
 # 第三部分：网页的设计（除却颜色以外建议不要修改）
 theme:
