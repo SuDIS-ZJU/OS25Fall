@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -152,13 +152,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -197,7 +195,6 @@
     </div>
   </div>
 </div>
-      
     
     
   </nav>
@@ -246,10 +243,8 @@
       <a href=".." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     前言
-    
   </span>
   
 
@@ -268,10 +263,8 @@
       <a href="../preparation/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     实验导读
-    
   </span>
   
 
@@ -296,17 +289,87 @@
         
       
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   <span class="md-ellipsis">
     常见问题及答疑
-    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    常见问题及答疑
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lab1-6arm64rv32rv64x86_64" class="md-nav__link">
+    <span class="md-ellipsis">
+      lab1-思考题6：如何获取ARM64/RV32/RV64/x86_64架构的系统调用表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="lab1-思考题6：如何获取ARM64/RV32/RV64/x86_64架构的系统调用表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 找到调用了系统调用表并进行配置的*.c文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 对这个*.c文件进行交叉编译，目标是生成*.i文件（实验指导一：其他架构的交叉编译中提及）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-what-about-arm32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. What About ARM32?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -322,10 +385,8 @@
       <a href="../notice/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     通知
-    
   </span>
   
 
@@ -354,6 +415,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lab1-6arm64rv32rv64x86_64" class="md-nav__link">
+    <span class="md-ellipsis">
+      lab1-思考题6：如何获取ARM64/RV32/RV64/x86_64架构的系统调用表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="lab1-思考题6：如何获取ARM64/RV32/RV64/x86_64架构的系统调用表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 找到调用了系统调用表并进行配置的*.c文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 对这个*.c文件进行交叉编译，目标是生成*.i文件（实验指导一：其他架构的交叉编译中提及）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-what-about-arm32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. What About ARM32?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -367,9 +478,72 @@
                   
 
 
-
 <h1 id="_1">常见问题及回答<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>在本节中会定期更新同学们的共性问题及回答。</p>
+<h2 id="lab1-6arm64rv32rv64x86_64">lab1-思考题6：如何获取ARM64/RV32/RV64/x86_64架构的系统调用表<a class="headerlink" href="#lab1-6arm64rv32rv64x86_64" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>相信有很多同学在完成这个思考题时，找到了类似<code>*.tbl</code>的文件，但是恰恰RISCV目录下是没有这个文件的（其实这个RISCV使用的是linux大目录下<code>scripts</code>中的<code>.tbl</code>文件。）</p>
+<p>需要注意的是，<code>*.tbl</code>文件 <strong>并不是</strong> 思考题中要求的“宏展开后”的文件，它只是一个存放数据的文件，并没有体现出它在代码中的嵌入关系。</p>
+<p>而在思考题5中，我们使用交叉编译生成的<code>*.i</code>文件，才是该思考题希望同学们获取的答案。</p>
+</div>
+<blockquote>
+<p>由于该部分较为复杂，因此同学们在报告中该思考题的ARM和x86的部分只需要提供.tbl文件的截图即可（RISCV仍然需要体现使用交叉编译生成文件的过程），具体的交叉编译方法供有兴趣的同学参考。</p>
+</blockquote>
+<p>首先，我们要梳理获取系统调用表的具体方法：</p>
+<h3 id="1-c">1. 找到调用了系统调用表并进行配置的<code>*.c</code>文件<a class="headerlink" href="#1-c" title="Permanent link">&para;</a></h3>
+<p>在不同的架构中，这些文件可能位于不同的位置（同学们可以思考 <del>不使用GPT</del> 如何找到它们，这里直接将答案列出）：</p>
+<ul>
+<li>ARM64：位于<code>arch/arm64/kernel/sys.c</code></li>
+<li>RISCV32/64：位于<code>arch/riscv/kernel/syscall_table.c</code></li>
+<li>x86_64：位于<code>arch/x86/syscall_64.c</code></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>为什么RISCV32/64使用的是同一个.c文件呢？</p>
+<p>因为这个文件会通过编译时所使用的编译器来考虑使用RISCV32/64的系统调用表，换言之，对于RV32/64的编译，生成目标（即.i文件的路径）是不变的，你只需要修改所使用的编译器即可。</p>
+</div>
+<h3 id="2-ci">2. 对这个<code>*.c</code>文件进行交叉编译，目标是生成<code>*.i</code>文件（实验指导一：其他架构的交叉编译中提及）<a class="headerlink" href="#2-ci" title="Permanent link">&para;</a></h3>
+<p>生成<code>*.i</code>文件的本质目的是： <strong>将c文件中的宏定义进行展开，获取展开后的系统调用表</strong> </p>
+<ul>
+<li>这是因为：<code>*.c</code>文件往往是通过引用多个<code>*.h</code>文件来进行构造的，而实际的系统调用表内容一般存放在<code>*.h</code>文件中。因此，只观察<code>*.c</code>文件是无法看到具体的系统调用表内容的。</li>
+</ul>
+<p>对于不同的架构，你需要选择（必要时需要安装）不同的编译工具链，并指定好对应需要生成的<code>*.i</code>文件的路径：</p>
+<p>对于编译工具链：</p>
+<ul>
+<li>ARM64：使用<code>gcc-aarch64-linux-gnu</code>，需要自行安装（指导中已给出方法）</li>
+<li>RISCV32：使用<code>riscv32-linux-gnu-</code>，需要自行安装</li>
+<li>RISCV64：使用<code>riscv64-linux-gnu-</code>，在lab0中我们使用的就是这个编译器</li>
+<li>x86_64：使用<code>x86_64-linux-gnu-</code>，使用WSL的同学应当在Linux初始化环境时就拥有这个编译器，如果是其他方式进行实验的同学可能需要自行安装</li>
+</ul>
+<p>在安装好工具链后， <strong>需要先进行defconfig配置</strong> （具体方法在lab0中使用过）</p>
+<p>之后，就可以依照lab1给出的模板生成<code>.i</code>文件了：</p>
+<p><code>make ARCH=&lt;arch name&gt; CROSS_COMPILE=&lt;compiler name&gt; &lt;path&gt;</code></p>
+<p>其中<code>&lt;&gt;</code>的内容是需要根据需求进行替换的部分，需要注意的是：
+- <code>&lt;path&gt;</code>替换为当前目录下的相对路径，如<code>arch/arm64/kernel/sys.i</code></p>
+<p>之后，如果你所生成的<code>.i</code>文件的末尾（约70000行）存在类似这样的对照表（不同架构生成的内容表现形式可能不同，但应当是系统调用号到系统调用名之间的一一对应关系）：</p>
+<div class="highlight"><pre><span></span><code># 1 &quot;./arch/riscv/include/generated/asm/syscall_table_64.h&quot; 1
+[0] = __riscv_sys_io_setup,
+[1] = __riscv_sys_io_destroy,
+[2] = __riscv_sys_io_submit,
+[3] = __riscv_sys_io_cancel,
+[4] = __riscv_sys_io_getevents,
+[5] = __riscv_sys_setxattr,
+[6] = __riscv_sys_lsetxattr,
+[7] = __riscv_sys_fsetxattr,
+[8] = __riscv_sys_getxattr,
+[9] = __riscv_sys_lgetxattr,
+[10] = __riscv_sys_fgetxattr,
+# ...
+</code></pre></div>
+<p>这说明你成功地获取了宏展开后的系统调用表！</p>
+<h3 id="3-what-about-arm32">3. What About ARM32?<a class="headerlink" href="#3-what-about-arm32" title="Permanent link">&para;</a></h3>
+<p>ARM32的情况相比于其余几种架构更为特殊，它的导入路径如下：</p>
+<p><code>arch/arm/tools/syscall.tbl -----&gt; arch/arm/include/generated/asm/unistd-nr.h -----&gt; arch/arm/kernel/entry-common.S</code></p>
+<p>这意味着，经过Makefile的层层处理后，最终是由一个<code>.S</code>文件来参与最终的编译和链接。遗憾的是，Makefile中并没有给出<code>*.S</code>到<code>*.i</code>的转化规则，仅有<code>*.S</code>到<code>*.o</code>的转化规则 <del>（拼尽全力无法战胜）</del> ，因此在不修改执行命令或者Makefile的前提下无法显式地查看宏展开后的系统调用表。</p>
+<blockquote>
+<p>如果有同学发现了可以查看该系统调用表的方法，欢迎与助教联系！</p>
+</blockquote>
 
 
 
@@ -462,12 +636,10 @@
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "navigation.footer", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.path", "navigation.top", "toc.follow", "content.action.edit", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "navigation.footer", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.path", "navigation.top", "toc.follow", "content.action.edit", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
