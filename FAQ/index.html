@@ -512,11 +512,15 @@
 <p>对于编译工具链：</p>
 <ul>
 <li>ARM64：使用<code>gcc-aarch64-linux-gnu</code>，需要自行安装（指导中已给出方法）</li>
-<li>RISCV32：使用<code>riscv32-linux-gnu-</code>，需要自行安装</li>
+<li>RISCV32：使用<code>riscv64-linux-gnu-</code>， <strong>但是需要使用不同的config使其能够使用RV32编译方法</strong></li>
 <li>RISCV64：使用<code>riscv64-linux-gnu-</code>，在lab0中我们使用的就是这个编译器</li>
 <li>x86_64：使用<code>x86_64-linux-gnu-</code>，使用WSL的同学应当在Linux初始化环境时就拥有这个编译器，如果是其他方式进行实验的同学可能需要自行安装</li>
 </ul>
-<p>在安装好工具链后， <strong>需要先进行defconfig配置</strong> （具体方法在lab0中使用过）</p>
+<p>在安装好工具链后， <strong>需要先进行config配置</strong> （具体方法在lab0中使用过）</p>
+<ul>
+<li>对于ARM64、x86_64、RISCV64，使用<code>defconfig</code>配置即可</li>
+<li>对于RISCV32，需要使用<code>rv32_defconfig</code>配置</li>
+</ul>
 <p>之后，就可以依照lab1给出的模板生成<code>.i</code>文件了：</p>
 <p><code>make ARCH=&lt;arch name&gt; CROSS_COMPILE=&lt;compiler name&gt; &lt;path&gt;</code></p>
 <p>其中<code>&lt;&gt;</code>的内容是需要根据需求进行替换的部分，需要注意的是：
@@ -542,8 +546,10 @@
 <p><code>arch/arm/tools/syscall.tbl -----&gt; arch/arm/include/generated/asm/unistd-nr.h -----&gt; arch/arm/kernel/entry-common.S</code></p>
 <p>这意味着，经过Makefile的层层处理后，最终是由一个<code>.S</code>文件来参与最终的编译和链接。遗憾的是，Makefile中并没有给出<code>*.S</code>到<code>*.i</code>的转化规则，仅有<code>*.S</code>到<code>*.o</code>的转化规则 <del>（拼尽全力无法战胜）</del> ，因此在不修改执行命令或者Makefile的前提下无法显式地查看宏展开后的系统调用表。</p>
 <blockquote>
-<p>如果有同学发现了可以查看该系统调用表的方法，欢迎与助教联系！</p>
+<p>如果有同学发现了可以查看该系统调用表的方法或有补充意见及建议，欢迎与助教联系！</p>
 </blockquote>
+<hr />
+<p>特别感谢黄同学为实验指导做出的补充！同时也鼓励同学们发掘实验文档中的问题并与助教交流！</p>
 
 
 

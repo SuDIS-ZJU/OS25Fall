@@ -330,15 +330,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
       关于AI使用
@@ -353,7 +344,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       致谢
     </span>
@@ -502,15 +493,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
       关于AI使用
@@ -525,7 +507,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       致谢
     </span>
@@ -550,13 +532,14 @@
 
 <h1 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>本文档适用于李环、柳晴老师授课的班级，助教为任飞扬、王昊元、梁文杰。</p>
-<p>实验详细指导文档：</p>
-<p>实验所需代码：</p>
+<p>实验详细指导文档：<a href="https://zju-os-sld.pages.zjusct.io/os-25fall">https://zju-os-sld.pages.zjusct.io/os-25fall</a> </p>
+<p>实验代码仓库：<a href="https://git.zju.edu.cn/zju-os-sld/os-25fall">https://git.zju.edu.cn/zju-os-sld/os-25fall</a></p>
+<p>注：实验遵循本班教学要求来，不需要按照实验详细指导-常见问题及答疑-实验提交要求</p>
 <h2 id="_2">实验相关要求<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="_3">课程分数构成<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>期末考试（50%）</li>
-<li>平时分（50%）</li>
+<li>平时分（50%）<ul>
 <li>作业（5%）</li>
 <li>课堂小测（5%）</li>
 <li>实验（40%）<ul>
@@ -565,7 +548,10 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h3 id="_4">实验安排和分数占比<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>初步拟定DDL，如果更新会及时通知</p>
 <table>
 <thead>
 <tr>
@@ -578,73 +564,99 @@
 <tbody>
 <tr>
 <td>实验0：RISC-V 64内核调试</td>
-<td></td>
-<td></td>
+<td>10.2</td>
+<td>不用验收</td>
 <td>5%</td>
 </tr>
 <tr>
 <td>实验1：内核引导&amp;时钟和中断</td>
-<td></td>
-<td></td>
+<td>10.9</td>
+<td>10.16</td>
 <td>15%</td>
 </tr>
 <tr>
 <td>实验2：线程调度&amp;上下文切换</td>
-<td></td>
-<td></td>
+<td>10.23</td>
+<td>10.30</td>
 <td>15%</td>
 </tr>
 <tr>
 <td>实验3：虚拟内存管理</td>
-<td></td>
-<td></td>
+<td>11.13</td>
+<td>11.20</td>
 <td>15%</td>
 </tr>
 <tr>
-<td>实验4：用户态程序</td>
-<td></td>
-<td></td>
+<td>实验4：用户态程序&amp;系统调用</td>
+<td>11.27</td>
+<td>12.4</td>
 <td>20%</td>
 </tr>
 <tr>
 <td>实验5：Page fault &amp;Fork</td>
-<td></td>
-<td></td>
+<td>12.18</td>
+<td>12.25</td>
 <td>30%</td>
 </tr>
 <tr>
-<td>实验6（<strong>Bonus</strong>）：File System</td>
-<td></td>
-<td></td>
+<td>实验6（ <strong>Bonus</strong> ）：File System</td>
+<td>12.25</td>
+<td>1.3(暂定)</td>
 <td>Part1：6%<br />Part2：4%</td>
 </tr>
 </tbody>
 </table>
-<p>其中实验0-2要求同学们**独立完成**，实验3-5允许2人组队完成，实验6（Bonus）以**个人**为单位完成。其中加上Bonus不会超过平时分总分，迟交报告及验收会视情况给出惩罚。</p>
+<p>其中实验0-2要求同学们 <strong>独立完成</strong> ，实验3-5允许 <strong>2人组队</strong> 完成，实验6（Bonus）以 <strong>个人</strong> 为单位完成。其中加上Bonus不会超过平时分总分，迟交报告及验收会视情况给出惩罚。</p>
 <h3 id="_5">关于实验报告<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>一般实验报告截止日期在实验发布后2周，特殊情况会说明，延迟会有惩罚</p>
 <ul>
-<li>提交物：本实验完整代码的压缩文件 &amp; 实验报告，名字都命名为<code>labX-姓名-学号</code></li>
-<li>关于代码：</li>
-<li>代码提供**详细注释**，每5行左右给出注释，中英文不限</li>
-<li>需要通过实验指导文档中的正确性测试</li>
-<li>提交压缩文件</li>
-<li><strong>禁止Cheating</strong></li>
-<li>关于报告：</li>
-<li><strong>内容为王</strong>，可以用实验Word模板，markdown，latex等等</li>
-<li><strong>结构清晰、分级明确</strong></li>
-<li>尽量提交**pdf**文件</li>
-<li>不要遗漏思考题、心得与感悟，这部分很重要</li>
-<li>合作组队的同学可以侧重描述自己负责的部分，但不能忽略其他部分，需要在报告开头说明两人的分工情况</li>
+<li>提交物：本实验完整代码的压缩文件 &amp; 实验报告，名字都命名为<code>labX_姓名_学号</code></li>
+<li>关于代码：<ul>
+<li>代码提供 <strong>详细注释</strong> ，每5行左右给出注释，中英文不限</li>
+<li>需要正确通过实验指导文档中的编译与测试</li>
+<li>提交 <strong>make clean</strong> 清理之后的代码压缩文件</li>
+<li><strong>禁止Cheating</strong> </li>
 </ul>
+</li>
+<li>
+<p>关于报告：</p>
+<ul>
+<li><strong>内容为王</strong>，建议使用markdown，latex等编写报告，不建议使用word编写</li>
+<li><strong>结构清晰、分级明确</strong></li>
+<li>提交 <strong>pdf</strong> 文件</li>
+<li>不要遗漏讨论与心得以及思考题，这部分很重要</li>
+<li>合作组队的同学可以侧重描述自己负责的部分，但不能忽略其他部分，需要在报告开头说明两人的分工情况</li>
+<li><strong>根据学校规定，报告不允许使用AI</strong></li>
+</ul>
+</li>
+<li>
+<p>报告具体内容要求包括：</p>
+<ul>
+<li>实验具体过程与相应代码实现</li>
+<li>实验结果与简要说明</li>
+<li>讨论与心得（实验中遇到的问题以及解决方法、心得体悟）</li>
+<li>思考题</li>
+<li>AI使用情况（明确指出使用了什么工具，如何使用）</li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>在实验具体过程与代码实现中展示 <strong>实现步骤/思路</strong> 和 <strong>核心代码</strong> 即可，不需要大段复制实验指导书的内容，也不需要大段粘贴代码和大片截图，过程讲清楚即可<ul>
+<li>如要展示代码，需以非纯文本的形式展示（需要使用代码块）</li>
+</ul>
+</li>
+</ul>
+</div>
 <blockquote>
 <p>注：实验0不需要进行代码的提交，只需要提交报告；其余实验需要提交代码和报告。</p>
 </blockquote>
-<p>最后，关于代码和报告，需要**分开上传**，即代码压缩文件加上报告，而不是一个压缩文件里面包含了代码和报告。</p>
+<p>最后，关于代码和报告，需要 <strong>分开上传</strong> ，即代码压缩文件加上报告，而不是一个压缩文件里面包含了代码和报告。</p>
 <h3 id="_6">关于实验验收<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>一般验收截止日期在实验发布后三周之内的实验课，特殊情况会说明，延迟会有惩罚</p>
 <ul>
-<li><strong>鼓励提前验收</strong>,防止大家都堵在某一周验收,提高验收效率</li>
+<li><strong>鼓励提前验收</strong> ,防止大家都堵在某一周验收,提高验收效率</li>
 <li>验收时需要看代码运行的情况,建议提前把准备工作做好,提高效率</li>
 <li>验收会提问,关于代码细节,工具使用以及基础实验理解（包括但不限于实验指导中的问题）等等</li>
 <li>组队实验，验收时两者需要都到场验收，实在特殊情况可以分开验收</li>
@@ -652,7 +664,9 @@
 <li><strong>不要根据以往的仓库做实验，实验会有变动</strong></li>
 <li>请主动拒绝cheat！！！</li>
 </ul>
-<h3 id="_7"><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>注：实验0不需要进行现场验收，其余实验均需要在实验课进行验收</p>
+</blockquote>
 <h3 id="ai">关于AI使用<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
 <p>鼓励同学们使用AI进行辅助编程，良好的使用方式有：</p>
 <ul>
@@ -663,7 +677,13 @@
 <li>代码优化和重构：我会让 AI 帮我检查已有代码的性能、可读性，并提出优化建议。</li>
 <li>用 AI 辅助完善注释：我先自己写核心注释勾勒逻辑，再让 AI 补充细节说明，让注释更完整易懂。</li>
 </ul>
-<h2 id="_8">致谢<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>根据学校规定，报告不允许使用AI，如检测核实将会有惩罚</li>
+</ul>
+</div>
+<h2 id="_7">致谢<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>感谢以下各位老师和助教的辛勤付出！</p>
 <p><a href="https://wenboshen.org/">申文博</a>、<a href="https://yajin.org/">周亚金</a>、徐金焱、周侠、管章辉、张文龙、刘强、孙家栋、周天昱、庄阿得、王琨、沈韬立、王星宇、朱璟森、谢洵、<a href="https://pan-ziyue.github.io/">潘子曰</a>、朱若凡、季高强、郭若容、杜云潇、吴逸飞、李程浩、朱家迅、王行楷、陈淦豪、赵紫宸、<a href="https://tonycrane.cc">王鹤翔</a>、许昊瑞、杨沛山、<a href="https://github.com/bowling233">朱宝林</a>、<a href="https://github.com/hharryz">张恒斌</a>。</p>
 
