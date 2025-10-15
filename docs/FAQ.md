@@ -61,7 +61,7 @@
 
 !!! tip
 
-    如果在编译过程中报错：缺失'<gelf.h>'文件：
+    如果在编译过程中报错：缺失`<gelf.h>`文件：
 
     需要通过`sudo apt install libelf-dev`安装libelf-dev工具来补充该头文件
 
